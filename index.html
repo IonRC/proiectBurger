@@ -2,55 +2,101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Burgher</title>
+    <title>Burger</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header class="header">
-        <img src="imgs/salad_leaf.png" alt="leaf">
-        <h1>Конструктор бургеров</h1>
-        <img src="imgs/salad_leaf.png" alt="leaf">
-    </header>
-
-    <ul class="ingredientsGroups">
-        <li class="liBread">
-            <img src="imgs/burgher_white.png" alt="bread">
-            <p>Булки</p>
-        </li>
-        <li class="liMeat">
-            <img src="imgs/burger_meat.png" alt="meat">
-            <p>Котлетосы</p>
-        </li>
-        <li class="liVegetables">
-            <img src="imgs/tomato_slice.png" alt="vegetables">
-            <p>Овощи</p>
-        </li>
-        <li class="liCheese">
-            <img src="imgs/cheese_slice.png" alt="cheese">
-            <p>Сыр</p>
-        </li>
-        <li class="liSauce">
-            <img src="imgs/sauce.png" alt="sauce">
-            <p>Соус</p>
-        </li>
-    </ul>
-
-<div class="container">
-    <div class="left">
-        <!-- <p>Тут будут ингредиенты; цвет блока для видимости блока</p> -->
+<div class="header">
+    <div class="list1">
+        <img src="imgs/salad_leaf.png">
     </div>
-    <div class="centre">
-        <h2>Тут будет конструктор; цвет блока для видимости блока</h2>
-    </div>
-    <div class="right">
-        <p>Мой бургер :</p>
+    <h1 class="title">Burger Constructor</h1>
+    <div class="list2">
+        <img src="imgs/salad_leaf.png">
     </div>
 </div>
+<ul class="variation-list">
+    <li>
+    <img src="imgs/burgher_white.png">
+        <h2>Buns</h2>
+    </li>
+    <li>
+        <img src="imgs/burger_meat.png">
+        <h2>Meats</h2>
+    </li>
+    <li>
+        <img src="imgs/cheese_slice.png">
+        <h2>Cheeses</h2>
+    </li>
+<!--    <li>-->
+<!--        <img src="imgs/salad_leaf.png">-->
+<!--        <h2>Salad</h2>-->
+<!--    </li>-->
+    <li>
+        <img src="imgs/tomato_slice.png">
+        <h2>Vegetables</h2>
+    </li>
+    <li>
+        <img src="imgs/sauce.png">
+        <h2>Sauce</h2>
+    </li>
+</ul>
 
-<h1>Culorile sunt puse pentru a vedea blocurile</h1>
+<div class="all">
+    <div class="left">
+            <h3 class="title">Buns: <span>Choose one of</span></h3>
+            <ul class="ingredients-list">
+                <li>
+                    <div class="ingredients-list-image">
+                        <img id="bread1" src="imgs/burgher_white.png" width="60">
+                    </div>
+                    <div class="text-ingredients">
+                        <p>Buns</p>
+                        <p>10 MDL</p>
+                    </div>
+                    <div class="btn-ingredients">
+                        <button class="btn-plus">+</button>
+                    </div>
+                </li>
+            </ul>
+    </div>
+    <div class="middle">
+        <img width="100%" height="300" src="imgs/burgher_white.png">
+    </div>
+    <div class="right">
+            <h3 class="title">My burger:</h3>
+        <ul class="summary">
+            <li>
+                <div class="sum-ingredients">
+                    <p>
+                        <span class="color-grey">Ingridients / weight</span>
+                        <span class="text-right">
+                            10 MDL
+                        </span>
+                    </p>
+                </div>
+                <div class="btn-minus">
+                    <button class="btn-remove">X</button>
+                </div>
+            </li>
+        </ul>
+        <h2 class="sum-of-all">Summary: 10 MDL / burger</h2>
+        <p class="sum-of-weight">Weight: 90g</p>
+        <div class="qty-order">
+            <div class="qty">
+                <button class="btn-transparent">-</button>
+                <input class="input-value" value="1">
+                <button class="btn-transparent">+</button>
+            </div>
+            <div class="order">
+                <button class="order-btn">
+                    <img src="icons8-beef-burger-30.png">
+                    <span class="center">Order</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="script.js"></script>
 </body>
